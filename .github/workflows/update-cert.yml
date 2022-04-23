@@ -3,6 +3,8 @@ name: Update Cert
 on:
   schedule:
     - cron: '0 10 1 * *'
+  push:
+    tags: [ 'v*.*.*' ]
 
 jobs:
   build:
